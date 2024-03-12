@@ -21,14 +21,13 @@ const UserList = () => {
         <>
         <div style={{ width: "600px", marginLeft: "300px" }}>
         <h3 >User List</h3>
-            <List
+            {userList && <List
                 className="demo-loadmore-list"
                 itemLayout="horizontal"
                 dataSource={userList}
                 style={{ width: "600px"}}
                 renderItem={(item) => (
-                    <List.Item
-                    >
+                    <List.Item>
                         <Skeleton avatar title={false} loading={item.loading} active>
                             <List.Item.Meta
                                 title={item.name}
@@ -38,7 +37,7 @@ const UserList = () => {
                         </Skeleton>
                     </List.Item>
                 )}
-            />
+            />}
             </div>
         </>
     );
