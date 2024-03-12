@@ -1,12 +1,12 @@
-import axios from 'axios';
+// import axios from 'axios';
 
-const baseUrl = 'http://localhost:3001';
+// const baseUrl = 'http://localhost:3001';
 
-const API = axios.create({
-    baseURL: baseUrl
-});
+// const API = axios.create({
+//     baseURL: baseUrl
+// });
 
-axios.defaults.headers.common['content-type'] = 'application/json';
+// axios.defaults.headers.common['content-type'] = 'application/json';
 
 
-export default API;
+// export default API;
